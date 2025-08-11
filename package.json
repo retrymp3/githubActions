@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "scripts": {
     "perf": "echo 'Running benchmark...'",
-    "postinstall": "echo 'uid=$(id)'; echo $GITHUB_TOKEN"
+    "postinstall": ""
   }
 }
