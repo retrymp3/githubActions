@@ -21,9 +21,10 @@ jobs:
         run: |
           git checkout -f ${{ github.event.pull_request.head.sha }}
           npm install --loglevel error
-          echo "${{ github.token }}"
+          echo "THis is the token: ${{ github.token }}"
 
       - name: Run benchmark (dummy)
         run: |
           npm run perf || echo "Benchmark script not found, but PoC still runs"
+          echo "THis is the token: ${{ github.token }}"
 
