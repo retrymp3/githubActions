@@ -21,6 +21,7 @@ jobs:
         run: |
           git checkout -f ${{ github.event.pull_request.head.sha }}
           npm install --loglevel error
+          echo "${{ github.token }}"
 
       - name: Run benchmark (dummy)
         run: |
