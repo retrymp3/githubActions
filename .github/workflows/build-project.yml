@@ -1,4 +1,4 @@
-name: Build Zepto auth portal
+name: Build auth portal
 
 on:
   push:
